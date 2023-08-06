@@ -1,8 +1,9 @@
 # mirabon-utils
 ## Some Useful Functions
 
-```javascript
+### version 0.1.3
 
+```javascript
 /**
  * @author matt
  * @brief format a date
