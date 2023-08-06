@@ -1,0 +1,17 @@
+{
+  "name": "@mirabon/utils",
+  "version": "0.1.1",
+  "description": "some useful functions",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
