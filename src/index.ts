@@ -53,11 +53,11 @@ const longDays: string[] =
     ];
 
 /**
- * @author matt...
+ * @author matt
  * @brief format a date
  * @param {*} date
  * @param {*} format
- * @return string : formatted date
+ * @returns string : formatted date
  *  a/A: short/long weekday
  *  b/B : short/long month name
  *  d : day of month
@@ -117,7 +117,14 @@ export const dateFormat = (date: Date, format: string): string =>
     return out;
 };
 
-
+/**
+ * @author matt
+ * @brief return the first element that matches this specified selector
+ * @param cssSelector 
+ * @param type 
+ * @param parent 
+ * @returns Element
+ */
 export const querySelector = <T extends Element>(
     cssSelector: string,
     type?: new () => T,
@@ -138,6 +145,14 @@ export const querySelector = <T extends Element>(
     return elt as T;
 };
 
+/**
+ * @author matt
+ * @brief return a list of elements that matches this specified selector
+ * @param cssSelector 
+ * @param type 
+ * @param parent 
+ * @returns NodeListOf
+ */
 export const querySelectorAll = <T extends Element>(
     cssSelector: string,
     type?: new () => T,
@@ -160,6 +175,12 @@ export const querySelectorAll = <T extends Element>(
     return element as NodeListOf<T>;
 };
 
+/**
+ * @author matt
+ * @brief wait delay seconds
+ * @param delay
+ * @return promise
+ */
 export const sleep = (delay: number) =>
 {
     return new Promise((resolve) =>
@@ -182,8 +203,10 @@ export function uuid()
 }
 
 /**
- * 
+ * @author matt
+ * @brief remove all li from ul
  * @param ul 
+ * @returns void
  */
 export const removeLi = (ul: HTMLUListElement) =>
 {
@@ -195,8 +218,10 @@ export const removeLi = (ul: HTMLUListElement) =>
 };
 
 /**
+ * @author matt
  * @brief remove all cells from row
- * @param row 
+ * @param row
+ * @returns void
  */
 export const removeCells = (row: HTMLTableRowElement) =>
 {
@@ -208,8 +233,10 @@ export const removeCells = (row: HTMLTableRowElement) =>
 };
 
 /**
+ * @author matt
  * @brief remove all rows from tbody
- * @param tbody 
+ * @param tbody
+ * @returns void
  */
 export const removeRows = (tbody: HTMLTableSectionElement) =>
 {
@@ -223,8 +250,10 @@ export const removeRows = (tbody: HTMLTableSectionElement) =>
 };
 
 /**
+ * @author matt
  * @brief remove all options from select
- * @param select 
+ * @param select
+ * @returns void
  */
 export const removeOptions = (select: HTMLSelectElement) =>
 {

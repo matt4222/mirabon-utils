@@ -1,15 +1,21 @@
 {
-  "name": "@mirabon/utils",
-  "version": "0.1.1",
+  "name": "mirabon-utils",
+  "version": "0.1.2",
   "description": "some useful functions",
   "type": "module",
   "main": "dist/index.js",
+  "homepage": "https://github.com/matt4222/utils",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:/matt4222/utils.git"
+  },
+  "publishConfig": {"access": "public"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "matt",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.1.6"
