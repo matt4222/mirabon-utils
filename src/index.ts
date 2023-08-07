@@ -119,6 +119,27 @@ export const dateFormat = (date: Date, format: string): string =>
 
 /**
  * @author matt
+ * @brief return the name of the day number
+ * @param i 
+ * @returns 
+ */
+export const getDay = (i: number) =>
+{
+    return days[i];
+};
+
+/**
+ * @author matt
+ * @brief return the name of the month number
+ * @param i
+ * @returns 
+ */
+export const getMonth = (i: number) =>{
+    return months[i];
+}
+
+/**
+ * @author matt
  * @brief return the first element that matches this specified selector
  * @param cssSelector 
  * @param type 

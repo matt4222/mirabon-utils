@@ -45,11 +45,11 @@ const longDays = [
     "Saturday"
 ];
 /**
- * @author matt...
+ * @author matt
  * @brief format a date
  * @param {*} date
  * @param {*} format
- * @return string : formatted date
+ * @returns string : formatted date
  *  a/A: short/long weekday
  *  b/B : short/long month name
  *  d : day of month
@@ -104,6 +104,32 @@ export const dateFormat = (date, format) => {
     }
     return out;
 };
+/**
+ * @author matt
+ * @brief return the name of the day number
+ * @param i
+ * @returns
+ */
+export const getDay = (i) => {
+    return days[i];
+};
+/**
+ * @author matt
+ * @brief return the name of the month number
+ * @param i
+ * @returns
+ */
+export const getMonth = (i) => {
+    return months[i];
+};
+/**
+ * @author matt
+ * @brief return the first element that matches this specified selector
+ * @param cssSelector
+ * @param type
+ * @param parent
+ * @returns Element
+ */
 export const querySelector = (cssSelector, type, parent = document) => {
     const elt = parent.querySelector(cssSelector);
     if (elt === null) {
@@ -114,6 +140,14 @@ export const querySelector = (cssSelector, type, parent = document) => {
     }
     return elt;
 };
+/**
+ * @author matt
+ * @brief return a list of elements that matches this specified selector
+ * @param cssSelector
+ * @param type
+ * @param parent
+ * @returns NodeListOf
+ */
 export const querySelectorAll = (cssSelector, type, parent = document) => {
     const element = parent.querySelectorAll(cssSelector);
     if (element === null) {
@@ -124,6 +158,12 @@ export const querySelectorAll = (cssSelector, type, parent = document) => {
     }
     return element;
 };
+/**
+ * @author matt
+ * @brief wait delay seconds
+ * @param delay
+ * @return promise
+ */
 export const sleep = (delay) => {
     return new Promise((resolve) => {
         setTimeout(resolve, delay);
@@ -139,8 +179,10 @@ export function uuid() {
     return uuid;
 }
 /**
- *
+ * @author matt
+ * @brief remove all li from ul
  * @param ul
+ * @returns void
  */
 export const removeLi = (ul) => {
     const len = ul.childNodes.length - 1;
@@ -149,8 +191,10 @@ export const removeLi = (ul) => {
     }
 };
 /**
+ * @author matt
  * @brief remove all cells from row
  * @param row
+ * @returns void
  */
 export const removeCells = (row) => {
     const len = row.cells.length - 1;
@@ -159,8 +203,10 @@ export const removeCells = (row) => {
     }
 };
 /**
+ * @author matt
  * @brief remove all rows from tbody
  * @param tbody
+ * @returns void
  */
 export const removeRows = (tbody) => {
     const len = tbody.rows.length - 1;
@@ -171,8 +217,10 @@ export const removeRows = (tbody) => {
     }
 };
 /**
+ * @author matt
  * @brief remove all options from select
  * @param select
+ * @returns void
  */
 export const removeOptions = (select) => {
     const len = select.options.length - 1;
