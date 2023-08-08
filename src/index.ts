@@ -58,7 +58,7 @@ const longDays: string[] =
      * @returns 
      */
 export const version = ()=>{
-    return "Version 0.1.5";
+    return "mirabon-utils version : 0.1.7";
 }
 
 /**
