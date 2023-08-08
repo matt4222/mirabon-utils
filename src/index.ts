@@ -93,7 +93,8 @@ export const dateFormat = (date: Date, format: string): string =>
                 out += months[date.getMonth()];
                 break;
             case 'B':
-                src out += day < 10 ? "0" + day : day;
+                let day = date.getDate();
+                out += day < 10 ? "0" + day : day;
                 break;
             case "H":
                 let hours = date.getHours();

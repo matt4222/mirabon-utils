@@ -46,6 +46,14 @@ const longDays = [
 ];
 /**
  * @author matt
+ * @brief return the version
+ * @returns
+ */
+export const version = () => {
+    return "Version 0.1.5";
+};
+/**
+ * @author matt
  * @brief format a date
  * @param {*} date
  * @param {*} format
@@ -73,9 +81,6 @@ export const dateFormat = (date, format) => {
                 out += months[date.getMonth()];
                 break;
             case 'B':
-                out += longMonths[date.getMonth()];
-                break;
-            case "d":
                 let day = date.getDate();
                 out += day < 10 ? "0" + day : day;
                 break;

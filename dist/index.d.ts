@@ -1,5 +1,11 @@
 /**
  * @author matt
+ * @brief return the version
+ * @returns
+ */
+export declare const version: () => string;
+/**
+ * @author matt
  * @brief format a date
  * @param {*} date
  * @param {*} format
