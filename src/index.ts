@@ -52,6 +52,15 @@ const longDays: string[] =
         "Saturday"
     ];
 
+    /**
+     * @author matt
+     * @brief return the version
+     * @returns 
+     */
+export const version = ()=>{
+    return "Version 0.1.5";
+}
+
 /**
  * @author matt
  * @brief format a date
@@ -84,11 +93,7 @@ export const dateFormat = (date: Date, format: string): string =>
                 out += months[date.getMonth()];
                 break;
             case 'B':
-                out += longMonths[date.getMonth()];
-                break;
-            case "d":
-                let day = date.getDate();
-                out += day < 10 ? "0" + day : day;
+                src out += day < 10 ? "0" + day : day;
                 break;
             case "H":
                 let hours = date.getHours();
