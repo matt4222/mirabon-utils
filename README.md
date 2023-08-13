@@ -1,8 +1,6 @@
 # mirabon-utils
 ## Some Useful Functions
 
-### version 0.1.3
-
 ```javascript
 /**
  * @author matt
