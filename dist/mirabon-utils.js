@@ -50,7 +50,7 @@ const longDays = [
  * @returns
  */
 export const version = () => {
-    return "mirabon-utils version : 0.1.9";
+    return "mirabon-utils version : 0.1.10";
 };
 /**
  * @author matt
